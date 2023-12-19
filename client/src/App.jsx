@@ -9,19 +9,25 @@ import Login from "./Pages/Login/Login";
 import Account from "./Pages/Account/Account";
 import Checkout from "./Pages/Checkout/Checkout";
 
+const Compare = () => {
+  return <div>Compare</div>;
+};
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/products/:category" element={<Products />} />
-          <Route path="/product/:id" element={<Product />} />
+          {/* <Route path="/products/:category" element={<Products />} /> */}
+          <Route path="/products" element={<Products />} />
+          {/* <Route path="/product/:id" element={<Product />} /> */}
+          <Route path="/product" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/login" element={<Login />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/compare" element={<Compare />} />
         </Route>
       </Routes>
     </BrowserRouter>

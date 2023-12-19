@@ -44,7 +44,13 @@ import IpadSide from "./ipadSide.jpg";
 import HeadphonesSide from "./headphonesSide.jpg";
 import NetworkSide from "./networkSide.jpg";
 import Vendor from "./vendor-logo-5.png.svg";
+import SearchBold from "./search-alt-svgrepo-com.svg";
+import Close from "./close-circle-svgrepo-com.svg";
+import CloseLight from './close-svgrepo-com.svg'
 export {
+  CloseLight,
+  Close,
+  SearchBold,
   Vendor,
   LaptopSide,
   TvSide,

@@ -1,8 +1,26 @@
-import './Header.scss'
-const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+import { useState } from "react";
+import Logo from "./Logo";
+import SearchInput from "./SearchInput";
+import MobileMenu from "./MobileMenu";
+import Menu from "./Menu";
 
-export default Header
+import "./Header.scss";
+import SearchBar from "./SearchBar";
+
+const Header = () => {
+  const [show, setShow] = useState(false);
+  const toggleShow = () => {
+    setShow((prev) => !prev);
+  };
+  return (
+    <header className="header">
+      <Logo />
+      <SearchInput className="desktop" />
+      <MobileMenu toggleShow={toggleShow} />
+      <Menu />
+      <SearchBar show={show} toggleShow={toggleShow} />
+    </header>
+  );
+};
+
+export default Header;
