@@ -46,8 +46,18 @@ import NetworkSide from "./networkSide.jpg";
 import Vendor from "./vendor-logo-5.png.svg";
 import SearchBold from "./search-alt-svgrepo-com.svg";
 import Close from "./close-circle-svgrepo-com.svg";
-import CloseLight from './close-svgrepo-com.svg'
+import CloseLight from "./close-svgrepo-com.svg";
+import Arr from "./arr.svg";
+import LapBanner from "./bannerLaptop.png";
+import TVBanner from "./bannerTv.png";
+import CleanBanner from "./bannerClean.png";
+import TabBanner from "./bannerTab.png";
 export {
+  LapBanner,
+  TVBanner,
+  CleanBanner,
+  TabBanner,
+  Arr,
   CloseLight,
   Close,
   SearchBold,

@@ -1,0 +1,105 @@
+@import "../../Mixins.scss";
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 20px;
+  .listItems {
+    position: relative;
+    flex: 1;
+    border-radius: 15px;
+    padding: 20px 10px;
+    border: 2px solid var(--border-color);
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+
+    @include xl {
+      display: flex;
+    }
+    &:hover {
+      border-radius: 15px 0 0 15px;
+    }
+    .listItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      border-radius: 50px;
+      transition: background-color 0.1s;
+      // transition: all ease 1s;
+      z-index: 5;
+      // position: fixed;
+      &:hover {
+        background-color: var(--main-color);
+        .arrow {
+          opacity: 0.8;
+        }
+        .subCategory {
+          display: flex;
+        }
+      }
+      .title {
+        font-size: 14px;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .arrow {
+        opacity: 0.4;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        transition: 0.3s;
+      }
+    }
+    .subCategory {
+      display: none;
+      position: absolute;
+      left: 293px;
+      top: -2px;
+      background-color: #ffffff;
+      width: calc(857px + 30px);
+      height: 524px;
+      transition: all ease 1s;
+      border: 2px solid;
+      border-color: var(--border-color) var(--border-color) var(--border-color)
+        transparent;
+      border-radius: 0 15px 15px 0;
+      .details {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0 40px 80px;
+        gap: 15px;
+        flex: 1;
+        .subCatHeader {
+          font-size: 14px;
+        }
+        .subItem {
+          font-size: 14px;
+          font-weight: 400;
+          cursor: pointer;
+        }
+      }
+      .trend {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 50px;
+        .title {
+          font-weight: 400;
+        }
+        .head {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .carousel {
+    flex: 3;
+    background-color: aliceblue;
+    border-radius: 15px;
+  }
+}

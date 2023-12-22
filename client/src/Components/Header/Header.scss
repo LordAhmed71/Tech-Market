@@ -7,10 +7,10 @@
   height: 100px;
   position: sticky;
   top: 0;
-  border-bottom: 2px solid var(--main-color);
-  margin-bottom: 30px;
+  border-bottom: 1px solid var(--button-color);
+  margin-bottom: 20px;
   background-color: #fff;
-
+  z-index: 999;
   .logo {
     display: flex;
     align-items: center;

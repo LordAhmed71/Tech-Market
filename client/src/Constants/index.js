@@ -40,6 +40,10 @@ import {
   IpadsLight,
   HeadphonesLight,
   NetworkingLight,
+  LapBanner,
+  TVBanner,
+  CleanBanner,
+  TabBanner,
 } from "../Assets/index";
 
 export const navLinks = [
@@ -395,7 +399,7 @@ export const Categories = [
   },
 ];
 
-export const Deals = [
+export const DealsData = [
   {
     desc: "Students save up to $430 on select Surface devices",
     img: studentDeal,
@@ -406,4 +410,58 @@ export const Deals = [
   },
 ];
 
-export const TempData = [{}];
+export const FooterData = [
+  {
+    title: "Get to Know Us",
+    list: ["About Us", "News & Blog", "Careers", "Investors", "Contact Us"],
+  },
+  {
+    title: "Customer Service",
+    list: [
+      "Help Center",
+      "FAQ’s",
+      "Accessibility",
+      "Feedback",
+      "Size Guide",
+      "Payment Method",
+    ],
+  },
+  {
+    title: "Orders & Returns",
+    list: [
+      "Track Order",
+      "Shipping & Delivery",
+      "Return & Exchange",
+      "Price Match guarantee",
+    ],
+  },
+];
+
+export const TodayBestDealsVertical = [
+  {
+    offer: "save up to 20%",
+    name: "Asus VivoBook",
+    desc: "Lighten everything",
+    img: LapBanner,
+  },
+  {
+    offer: "Deal of the Day",
+    name: "Limited Quantities",
+    desc: "Save up to 500$ on select big-screen TVs",
+    img: TVBanner,
+  },
+];
+export const TodayBestDealsHorizontal = [
+  {
+    offer: "introducing",
+    name: "iRobot Select",
+    desc: "Come home to clean",
+    img: CleanBanner,
+  },
+  {
+    offer: "new arrival",
+    name: "Galaxy Tab S7+",
+    desc: "Meet the Galaxy Tab",
+    img: TabBanner,
+  },
+];
