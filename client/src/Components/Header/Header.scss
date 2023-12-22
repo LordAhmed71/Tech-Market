@@ -1,80 +1,98 @@
 @import "../../Mixins.scss";
-.header {
+.headerContainer {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  height: 100px;
+  justify-content: center;
+  border-bottom: 3px solid var(--main-color);
+  height: 90px;
+  margin-bottom: 20px;
   position: sticky;
   top: 0;
-  border-bottom: 1px solid var(--button-color);
-  margin-bottom: 20px;
   background-color: #fff;
-  z-index: 999;
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  padding: 0 10px;
 
-  .searchContainer {
-    display: none;
-    position: relative;
-    flex: 1;
-    @include sm {
-      display: flex;
-    }
-    .input {
-      width: 100%;
-      height: 50px;
-      border-radius: 50px;
-      padding: 0 20px;
-      font-size: 14px;
-    }
-    .search {
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);
-    }
+  z-index: 999;
+  @include md {
+    padding: 0 40px;
   }
-  .mobileMenu {
+  @include xl {
+    padding: 0;
+  }
+  .header {
+    max-width: 1180px;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
-    @include sm {
+    gap: 20px;
+    height: 70px;
+    background-color: #fff;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .searchContainer {
       display: none;
+      position: relative;
+      flex: 1;
+      @include sm {
+        display: flex;
+      }
+      .input {
+        width: 100%;
+        height: 50px;
+        border-radius: 50px;
+        padding: 0 20px;
+        font-size: 14px;
+      }
+      .search {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
     }
-    .link {
+    .mobileMenu {
       display: flex;
-    }
-    .icon {
-      width: 20px;
-    }
-  }
-  .menu {
-    display: none;
-    gap: 15px;
-    @include sm {
-      display: flex;
-    }
-    .item {
-      display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: relative;
-      .img {
-        width: 22px;
+      gap: 15px;
+      @include sm {
+        display: none;
       }
-      .iconTitle {
-        font-size: 12px;
+      .link {
+        display: flex;
+      }
+      .icon {
+        width: 20px;
+      }
+    }
+    .menu {
+      display: none;
+      gap: 15px;
+      @include sm {
+        display: flex;
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .img {
+          width: 22px;
+        }
+        .iconTitle {
+          font-size: 12px;
+        }
       }
     }
   }
 }
-
 .searchBar {
   width: 100%;
   height: 60px;

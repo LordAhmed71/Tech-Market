@@ -372,7 +372,7 @@ export const heroCategories = [
   },
 ];
 
-export const Categories = [
+export const CategoriesData = [
   {
     name: "Cell Phones",
     img: PhoneImg,

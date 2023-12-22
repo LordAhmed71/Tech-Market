@@ -1,6 +1,10 @@
 @import "../../Mixins.scss";
 
-.dealsContainer {
+.categories {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 20px;
   .heading {
     display: flex;
     justify-content: space-between;
@@ -12,22 +16,13 @@
         font-size: 24px;
       }
     }
-
+    .underline {
+      font-size: 14px;
+      font-weight: 500;
+      font-family: Outfit, Arial, sans-serif;
+    }
     .underline::before {
       bottom: 0;
-    }
-  }
-  .deals {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 20px 0;
-
-    @include sm {
-      flex-direction: row;
-      border: 2px solid var(--border-color);
-      border-radius: 15px;
-      padding-top: 20px;
     }
   }
 }

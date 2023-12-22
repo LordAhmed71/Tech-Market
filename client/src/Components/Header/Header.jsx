@@ -13,13 +13,15 @@ const Header = () => {
     setShow((prev) => !prev);
   };
   return (
-    <header className="header">
-      <Logo />
-      <SearchInput className="desktop" />
-      <MobileMenu toggleShow={toggleShow} />
-      <Menu />
-      <SearchBar show={show} toggleShow={toggleShow} />
-    </header>
+    <div className="headerContainer">
+      <header className="header">
+        <Logo />
+        <SearchInput className="desktop" />
+        <MobileMenu toggleShow={toggleShow} />
+        <Menu />
+        <SearchBar show={show} toggleShow={toggleShow} />
+      </header>
+    </div>
   );
 };
 

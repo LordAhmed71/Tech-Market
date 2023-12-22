@@ -8,7 +8,10 @@ const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const Deals = () => {
   return (
     <div className="dealsContainer">
-      <h2 className="heading">Our Featured Offers</h2>
+      <div className="heading">
+        <h3>Our Featured Offers</h3>
+        <span className="underline">See All</span>
+      </div>
       {DealsData.map((d, i) => (
         <div className="deals">
           <Offer offer={d} />

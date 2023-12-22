@@ -18,7 +18,7 @@
     width: calc(25% - 16px);
   }
   @include xl {
-    width: calc(20% - 16px);
+    width: calc(20% - 10px);
     .icons {
       position: absolute;
       right: -50px;

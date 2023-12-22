@@ -12,16 +12,13 @@
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .heading {
       font-size: 24px;
       font-weight: 500;
     }
-    .button {
-      font-size: 14px;
-      font-weight: 500;
-      background-color: transparent;
-      color: var(--button-color);
-      text-decoration: underline;
+    .underline::before {
+      bottom: 0;
     }
   }
   .offers {
@@ -95,6 +92,7 @@
         .buttons {
           display: flex;
           gap: 20px;
+          align-items: center;
           .buy {
             padding: 12px 20px;
             border-radius: 50px;
@@ -126,7 +124,7 @@
           .name {
             font-size: 18px;
           }
-          .underline::before{
+          .underline::before {
             bottom: 0;
           }
         }

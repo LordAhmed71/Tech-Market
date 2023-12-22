@@ -10,7 +10,7 @@ const TodayDeals = () => {
     <div className="todayDeals">
       <div className="headingContainer">
         <h3 className="heading">Today's Best Deals</h3>
-        <button className="button">See All Deals</button>
+        <button className="underline">See All Deals</button>
       </div>
       <div className="offers">
         {TodayBestDealsVertical.map((item, i) => (
