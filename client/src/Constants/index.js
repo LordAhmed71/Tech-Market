@@ -44,6 +44,11 @@ import {
   TVBanner,
   CleanBanner,
   TabBanner,
+  Twitter,
+  Facebook,
+  Youtube,
+  Instagram,
+  Whatsapp,
 } from "../Assets/index";
 
 export const navLinks = [
@@ -465,3 +470,5 @@ export const TodayBestDealsHorizontal = [
     img: TabBanner,
   },
 ];
+
+export const SocialsIcons = [Twitter, Facebook, Youtube, Instagram, Whatsapp];

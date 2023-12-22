@@ -24,12 +24,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 15px;
+      padding: 10px 25px;
       border-radius: 50px;
       transition: background-color 0.1s;
-      // transition: all ease 1s;
       z-index: 5;
-      // position: fixed;
       &:hover {
         background-color: var(--main-color);
         .arrow {

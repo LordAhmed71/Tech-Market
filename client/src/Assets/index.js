@@ -52,7 +52,17 @@ import LapBanner from "./bannerLaptop.png";
 import TVBanner from "./bannerTv.png";
 import CleanBanner from "./bannerClean.png";
 import TabBanner from "./bannerTab.png";
+import Twitter from "./twitter-svgrepo-com.svg";
+import Facebook from "./facebook-svgrepo-com.svg";
+import Youtube from "./youtube-color-svgrepo-com.svg";
+import Instagram from "./instagram-social-media-network-communication-interaction-connection-svgrepo-com.svg";
+import Whatsapp from "./whatsapp-svgrepo-com.svg";
 export {
+  Twitter,
+  Facebook,
+  Youtube,
+  Instagram,
+  Whatsapp,
   LapBanner,
   TVBanner,
   CleanBanner,

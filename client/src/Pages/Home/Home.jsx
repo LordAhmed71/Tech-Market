@@ -5,17 +5,15 @@ import TodayDeals from "../../Components/TodayDeals/TodayDeals";
 import Categories from "../../Components/Categories/Categories";
 import FeaturedProducts from "../../Components/FeaturedProducts/FeaturedProducts";
 
-
 const Home = () => {
   return (
-    <div className="home">
+    <section className="home">
       <Hero />
       <Deals />
       <TodayDeals />
       <Categories />
-      <FeaturedProducts/>
-      <div style={{ height: "1000px" }}></div>
-    </div>
+      <FeaturedProducts />
+    </section>
   );
 };
 

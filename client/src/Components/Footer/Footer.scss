@@ -1,2 +1,142 @@
+@import "../../Mixins.scss";
 .footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0 10px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  @include md {
+    padding: 0 40px;
+  }
+  @include xl {
+    padding: 0;
+  }
+  .copyright {
+    padding-top: 20px;
+    max-width: 1180px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .wrapper {
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--border-color);
+    padding-bottom: 20px;
+    .footerLogo {
+      flex: 0.5;
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      @include sm{
+        display: flex;
+      }
+      @include lg {
+        flex: 1;
+      }
+      h2 {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .slo {
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.5;
+        width: 75%;
+        @include lg {
+          width: 50%;
+        }
+      }
+      .socials {
+        display: flex;
+        gap: 10px;
+        .socialIcon {
+          width: 25px;
+          transition: 0.3s;
+          cursor: pointer;
+          filter: grayscale(100%);
+          &:hover {
+            filter: grayscale(0);
+          }
+        }
+      }
+    }
+    .contact {
+      flex: 1;
+      display: none;
+      justify-content: space-between;
+      @include sm{
+        display: flex;
+      }
+      .infoData {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h3 {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .contactLists {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          .contactList {
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .mobileFooter {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      @include sm{
+        display: none;
+      }
+      .item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-top: 3px solid var(--border-color);
+        details {
+          width: 100%;
+          padding: 20px 0;
+
+          summary {
+            width: 100%;
+            list-style: none;
+            font-size: 16px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            padding: 5px 20px;
+            cursor: pointer;
+          }
+          .menu {
+            margin-top: 15px;
+          }
+        }
+        .open {
+          margin-top: 20px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

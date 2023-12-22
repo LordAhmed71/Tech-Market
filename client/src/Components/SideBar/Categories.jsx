@@ -1,5 +1,4 @@
-import { sidebarLinks ,heroCategories } from "./../../Constants/index";
-import { Tv } from "../../Assets";
+import { sidebarLinks  } from "./../../Constants/index";
 const Categories = () => {
   console.log();
 

@@ -1,10 +1,10 @@
+import HorizontalItem from "./HorizontalItem";
+import VerticalItem from "./VerticalItem";
 import {
   TodayBestDealsVertical,
   TodayBestDealsHorizontal,
 } from "../../Constants/index";
-import HorizontalItem from "./HorizontalItem";
 import "./TodayDeals.scss";
-import VerticalItem from "./VerticalItem";
 const TodayDeals = () => {
   return (
     <div className="todayDeals">

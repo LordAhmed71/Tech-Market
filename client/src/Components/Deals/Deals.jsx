@@ -13,8 +13,8 @@ const Deals = () => {
         <span className="underline">See All</span>
       </div>
       {DealsData.map((d, i) => (
-        <div className="deals">
-          <Offer offer={d} />
+        <div className="deals" key={i}>
+          <Offer offer={d}  />
           <Carousel>
             {data.map((item, i) => (
               <ProductCard key={i} />
