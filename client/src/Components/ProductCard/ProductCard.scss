@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 10px;
   position: relative;
-  width: 140px;
+  width: 170px;
   cursor: pointer;
   transition: 0.3s;
   overflow: hidden;
@@ -113,7 +113,7 @@
     align-items: center;
     justify-content: center;
     .btn {
-      width: 100%;
+      width: 60%;
       padding: 10px;
       border-radius: 50px;
       font-size: 14px;

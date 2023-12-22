@@ -27,14 +27,19 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 3px solid var(--border-color);
-    padding-bottom: 20px;
+    border: 3px solid var(--border-color);
+    border-color: transparent transparent var(--border-color) transparent;
+    @include sm {
+      padding: 40px 0;
+      border-color: var(--border-color) transparent var(--border-color)
+        transparent;
+    }
     .footerLogo {
       flex: 0.5;
       display: none;
       flex-direction: column;
-      gap: 5px;
-      @include sm{
+      gap: 10px;
+      @include sm {
         display: flex;
       }
       @include lg {
@@ -75,7 +80,7 @@
       flex: 1;
       display: none;
       justify-content: space-between;
-      @include sm{
+      @include sm {
         display: flex;
       }
       .infoData {
@@ -103,7 +108,7 @@
       justify-content: space-between;
       flex-direction: column;
       width: 100%;
-      @include sm{
+      @include sm {
         display: none;
       }
       .item {
