@@ -25,10 +25,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     height: 70px;
     background-color: #fff;
-
+    @include sm {
+      gap: 20px;
+    }
     .logo {
       display: flex;
       align-items: center;
@@ -39,6 +40,7 @@
       display: none;
       position: relative;
       flex: 1;
+      max-width: 620px;
       @include sm {
         display: flex;
       }
@@ -62,12 +64,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 15px;
+      gap: 10px;
       @include sm {
         display: none;
       }
       .link {
         display: flex;
+        @media (max-width: 350px) {
+          display: none;
+        }
       }
       .icon {
         width: 20px;
@@ -76,6 +81,9 @@
     .menu {
       display: none;
       gap: 15px;
+      @include xl {
+        gap: 20px;
+      }
       @include sm {
         display: flex;
       }
@@ -101,6 +109,7 @@
   position: absolute;
   top: 60px;
   animation: mobileMenu 0.3s ease forwards;
+  padding-right: 10px;
   .searchInput {
     display: flex;
     align-items: center;
@@ -114,7 +123,7 @@
     }
     input {
       background-color: var(--main-color);
-      width: 100%;
+      width: calc(100% - 25px);
       height: 50px;
       outline: 0;
       border: 0;

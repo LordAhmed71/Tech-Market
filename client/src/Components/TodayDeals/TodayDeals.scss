@@ -3,19 +3,21 @@
   display: flex;
   flex-direction: column;
   padding: 30px 20px;
-  margin-top: 20px;
   background-color: var(--main-color);
   border-radius: 16px;
   gap: 15px;
-  
+
   .headingContainer {
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .heading {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 500;
+      @include sm {
+        font-size: 24px;
+      }
     }
     .underline::before {
       bottom: 0;

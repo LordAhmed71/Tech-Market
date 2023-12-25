@@ -57,7 +57,9 @@ import Facebook from "./facebook-svgrepo-com.svg";
 import Youtube from "./youtube-color-svgrepo-com.svg";
 import Instagram from "./instagram-social-media-network-communication-interaction-connection-svgrepo-com.svg";
 import Whatsapp from "./whatsapp-svgrepo-com.svg";
+import Brand from "./homev8-slider-title1.png.svg";
 export {
+  Brand,
   Twitter,
   Facebook,
   Youtube,

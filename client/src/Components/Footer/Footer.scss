@@ -64,12 +64,12 @@
       }
       .socials {
         display: flex;
-        gap: 10px;
+        gap: 15px;
         .socialIcon {
-          width: 25px;
+          width: 20px;
           transition: 0.3s;
           cursor: pointer;
-          filter: grayscale(100%);
+          filter: grayscale(90%);
           &:hover {
             filter: grayscale(0);
           }

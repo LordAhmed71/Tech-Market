@@ -3,6 +3,8 @@ import Carousel from "./../Carousel/Carousel";
 import { DealsData } from "../../Constants/index";
 import "./Deals.scss";
 import ProductCard from "../ProductCard/ProductCard";
+import { next, prev } from "../../Assets";
+
 const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const Deals = () => {
@@ -14,7 +16,10 @@ const Deals = () => {
       </div>
       {DealsData.map((d, i) => (
         <div className="deals" key={i}>
-          <Offer offer={d}  />
+          {/* <img src={prev} alt="" className="arrow leftArrow" />
+          <img src={next} alt="" className="arrow rightArrow" /> */}
+
+          <Offer offer={d} />
           <Carousel>
             {data.map((item, i) => (
               <ProductCard key={i} />

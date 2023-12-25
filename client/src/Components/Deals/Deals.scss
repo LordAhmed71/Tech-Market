@@ -1,10 +1,33 @@
 @import "../../Mixins.scss";
 
 .dealsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  .arrow {
+    position: absolute;
+    top: 55%;
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: -1px 2px 8px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .leftArrow {
+    left: -25px;
+  }
+  .rightArrow {
+    right: -25px;
+  }
   .heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
+
     h3 {
       font-weight: 500;
       font-size: 18px;
@@ -21,11 +44,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 20px 0;
+    position: relative;
 
     @include sm {
       flex-direction: row;
-      border: 2px solid var(--border-color);
+      border: 3px solid var(--border-color);
       border-radius: 15px;
       padding-top: 20px;
     }

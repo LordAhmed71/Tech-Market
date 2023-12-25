@@ -3,12 +3,12 @@
 .categories {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  gap: 20px;
+  gap: 25px;
   .heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
     h3 {
       font-weight: 500;
       font-size: 18px;
@@ -17,9 +17,12 @@
       }
     }
     .underline {
-      font-size: 14px;
       font-weight: 500;
       font-family: Outfit, Arial, sans-serif;
+      font-size: 14px;
+      @include sm {
+        font-size: 16px;
+      }
     }
     .underline::before {
       bottom: 0;
