@@ -3,13 +3,10 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <nav className="menu">
-      {navLinks.map((navLink,i) => (
+      {navLinks.map((navLink, i) => (
         <Link to={navLink.to} className="link" key={i}>
           <div className="item">
             <img src={navLink.icon} alt="" className="img" />
-            {/* {(navLink.name === "Wishlist" || navLink.name === "Cart") && (
-              <span className="count">1</span>
-            )}{" "} */}
             <span className="iconTitle">{navLink.name}</span>
           </div>
         </Link>
